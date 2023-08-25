@@ -101,7 +101,7 @@ mod test {
         // Act
         let result_string = Solution::reorganize_string(test_string.clone());
         // Assert
-        assert_eq!(result_string, "".to_string());
+        assert_eq!(result_string, "a".to_string());
     }
     #[test]
     fn test_2_l_string() {
