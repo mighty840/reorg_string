@@ -247,15 +247,15 @@ mod test {
         // Act
         let result_string = Solution::reorganize_string(test_string.clone());
         println!("Result string: {result_string}");
-        // let mut good = true;
-        // let s = result_string.as_bytes().to_vec();
-        // for index in 0..(s.len() - 1) {
-        //     if s[index] == s[index + 1] {
-        //         good = false;
-        //         break;
-        //     }
-        // }
+        let mut good = true;
+        let s = result_string.as_bytes().to_vec();
+        for index in 0..(s.len() - 1) {
+            if s[index] == s[index + 1] {
+                good = false;
+                break;
+            }
+        }
         // Assert
-        assert!(true);
+        assert!(good);
     }
 }
