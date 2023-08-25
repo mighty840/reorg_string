@@ -1,8 +1,6 @@
-#[allow(unused)]
 struct Solution {}
 
 impl Solution {
-    #[allow(unused)]
     fn reorganize_string(s: String) -> String {
         let mut s1 = s.as_bytes().to_vec();
         let default_string = "".to_string();
@@ -38,11 +36,9 @@ impl Solution {
                 }
             }
             _ => {
-                for swap_iter in 0..*max_elem {
-                    let mut swap = false;
+                for _ in 0..*max_elem {
                     for index in 0..(len - 1) {
                         if s1[index] == s1[index + 1] {
-                            swap = true;
                             break;
                         }
                     }
